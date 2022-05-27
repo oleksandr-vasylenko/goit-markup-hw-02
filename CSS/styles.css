@@ -1,0 +1,167 @@
+/*
+main text (paragraphs/tel/e-mail) color: #757575
+secondary tet color: #212121
+accent (hover items/buttons/logo-blue) color: #2196F3
+white text color: #FFFFFF
+
+hero background-color: #2F303A
+team background-color: #F5F4FA
+
+footer background-color: #2F303A
+footer tel/e-mail text color: color: rgba(255, 255, 255, 0.6);
+*/
+
+/* ---------- VARIABLES ---------- */
+:root {
+  --main-font: 'Roboto', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: var(--main-font);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ---------- MAIN PAGE ---------- */
+/* ---------- HEADER ---------- */
+.header-logo {
+  color: #212121;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: #2196f3;
+}
+
+/* header-nav */
+.header-nav-list .header-nav-link {
+  color: #212121;
+}
+
+.header-nav-list .header-nav-link:hover,
+.header-nav-list .header-nav-link:focus {
+  color: #2196f3;
+}
+
+/* header-contacts */
+.header-mail,
+.header-tel {
+  color: #757575;
+}
+
+.header-mail:hover,
+.header-tel:hover,
+.header-mail:focus,
+.header-tel:focus {
+  color: #2196f3;
+}
+
+/* ---------- MAIN ---------- */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title,
+.hero-button {
+  color: #ffffff;
+}
+
+.hero-button {
+  background-color: #2196f3;
+}
+
+.val-headline,
+.services-title,
+.team-title,
+.team-members-name {
+  color: #212121;
+}
+
+.val-descr,
+.team-members-position {
+  color: #757575;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo,
+.footer-address {
+  color: #ffffff;
+  font-style: normal;
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* footer-contacts */
+.footer-mail,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer-mail:hover,
+.footer-tel:hover,
+.footer-mail:focus,
+.footer-tel:focus {
+  color: #2196f3;
+}
+
+/* ---------- PORTFOLIO PAGE ---------- */
+.portf-filter-button {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.portf-filter-button:hover,
+.portf-filter-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.portfolio-item-name {
+  color: #212121;
+}
+
+.portfolio-item-service {
+  color: #757575;
+}
