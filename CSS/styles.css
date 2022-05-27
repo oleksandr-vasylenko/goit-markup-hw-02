@@ -71,7 +71,7 @@ body {
 
 .header-nav-list .header-nav-link:hover,
 .header-nav-list .header-nav-link:focus {
-  color: var(--secondary-text);
+  color: var(--accent);
 }
 
 /* header-contacts */
