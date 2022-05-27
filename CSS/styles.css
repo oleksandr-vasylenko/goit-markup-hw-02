@@ -1,26 +1,30 @@
 /*
-main text (paragraphs/tel/e-mail) color: #757575
-secondary tet color: #212121
-accent (hover items/buttons/logo-blue) color: #2196F3
+dominant text color: #757575
+secondary tet color: 
+accent text/background color: #2196F3
 white text color: #FFFFFF
 
+1-time used:
+hero-button hover background-color: #188ce8
 hero background-color: #2F303A
 team background-color: #F5F4FA
-
 footer background-color: #2F303A
 footer tel/e-mail text color: color: rgba(255, 255, 255, 0.6);
 */
 
 /* ---------- VARIABLES ---------- */
 :root {
-  --main-font: 'Roboto', sans-serif;
+  --main-text: #757575;
+  --white-text: #ffffff;
+  --secondary-text: #212121;
+  --accent: #2196f3;
 }
 
 /* ---------- GENERAL ---------- */
 body {
   background-color: #ffffff;
-  color: #757575;
-  font-family: var(--main-font);
+  color: var(--main-text);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 .link {
@@ -48,7 +52,7 @@ body {
 /* ---------- MAIN PAGE ---------- */
 /* ---------- HEADER ---------- */
 .header-logo {
-  color: #212121;
+  color: var(--secondary-text);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -57,30 +61,30 @@ body {
 }
 
 .logo-blue {
-  color: #2196f3;
+  color: var(--accent);
 }
 
 /* header-nav */
 .header-nav-list .header-nav-link {
-  color: #212121;
+  color: var(--secondary-text);
 }
 
 .header-nav-list .header-nav-link:hover,
 .header-nav-list .header-nav-link:focus {
-  color: #2196f3;
+  color: var(--secondary-text);
 }
 
 /* header-contacts */
 .header-mail,
 .header-tel {
-  color: #757575;
+  color: var(--main-text);
 }
 
 .header-mail:hover,
 .header-tel:hover,
 .header-mail:focus,
 .header-tel:focus {
-  color: #2196f3;
+  color: var(--accent);
 }
 
 /* ---------- MAIN ---------- */
@@ -88,25 +92,31 @@ body {
   background-color: #2f303a;
 }
 
-.hero-title,
-.hero-button {
-  color: #ffffff;
+.hero-title {
+  color: var(--white-text);
 }
 
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--accent);
+  color: var(--white-text);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 .val-headline,
 .services-title,
 .team-title,
 .team-members-name {
-  color: #212121;
+  color: var(--secondary-text);
 }
 
 .val-descr,
 .team-members-position {
-  color: #757575;
+  color: var(--main-text);
 }
 
 .team {
@@ -120,7 +130,7 @@ body {
 
 .footer-logo,
 .footer-address {
-  color: #ffffff;
+  color: var(--white-text);
   font-style: normal;
 }
 
@@ -143,25 +153,30 @@ body {
 .footer-tel:hover,
 .footer-mail:focus,
 .footer-tel:focus {
-  color: #2196f3;
+  color: var(--accent);
 }
 
 /* ---------- PORTFOLIO PAGE ---------- */
 .portf-filter-button {
-  color: #212121;
+  color: var(--secondary-text);
   background-color: #f5f4fa;
+  cursor: pointer;
 }
 
 .portf-filter-button:hover,
 .portf-filter-button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-text);
+  background-color: var(--accent);
+}
+
+.portfolio-item {
+  background-color: #eeeeee;
 }
 
 .portfolio-item-name {
-  color: #212121;
+  color: var(--secondary-text);
 }
 
 .portfolio-item-service {
-  color: #757575;
+  color: var(--main-text);
 }
