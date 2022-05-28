@@ -79,6 +79,10 @@ body {
   color: var(--accent);
 }
 
+.header-nav-list .header-nav-link.current {
+  color: var(--accent);
+}
+
 /* header-contacts */
 .header-mail,
 .header-tel {
