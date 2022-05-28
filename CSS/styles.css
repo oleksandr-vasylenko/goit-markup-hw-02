@@ -32,10 +32,6 @@ body {
   text-decoration: none;
 }
 
-.link:current {
-  color: tomato;
-}
-
 .list {
   list-style: none;
 }
