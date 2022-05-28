@@ -32,6 +32,10 @@ body {
   text-decoration: none;
 }
 
+.link:current {
+  color: tomato;
+}
+
 .list {
   list-style: none;
 }
@@ -142,7 +146,6 @@ body {
 .services-title,
 .team-title {
   color: var(--secondary-text);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -249,7 +252,6 @@ body {
 
 .portfolio-item-name {
   color: var(--secondary-text);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
