@@ -1,6 +1,6 @@
 /*
 dominant text color: #757575
-secondary tet color: 
+secondary tet color: #212121;
 accent text/background color: #2196F3
 white text color: #FFFFFF
 
@@ -18,6 +18,7 @@ footer tel/e-mail text color: color: rgba(255, 255, 255, 0.6);
   --white-text: #ffffff;
   --secondary-text: #212121;
   --accent: #2196f3;
+  --logo-font: 'Raleway', sans-serif;
 }
 
 /* ---------- GENERAL ---------- */
@@ -53,7 +54,7 @@ body {
 /* ---------- HEADER ---------- */
 .header-logo {
   color: var(--secondary-text);
-  font-family: 'Raleway';
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -67,6 +68,10 @@ body {
 /* header-nav */
 .header-nav-list .header-nav-link {
   color: var(--secondary-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-nav-list .header-nav-link:hover,
@@ -78,6 +83,10 @@ body {
 .header-mail,
 .header-tel {
   color: var(--main-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-mail:hover,
@@ -94,12 +103,26 @@ body {
 
 .hero-title {
   color: var(--white-text);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
   background-color: var(--accent);
   color: var(--white-text);
   cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .hero-button:hover,
@@ -107,16 +130,47 @@ body {
   background-color: #188ce8;
 }
 
-.val-headline,
-.services-title,
-.team-title,
-.team-members-name {
+.val-headline {
   color: var(--secondary-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.val-descr,
+.services-title,
+.team-title {
+  color: var(--secondary-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.val-descr {
+  color: var(--main-text);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.team-members-name {
+  color: var(--secondary-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .team-members-position {
   color: var(--main-text);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team {
@@ -128,14 +182,24 @@ body {
   background-color: #2f303a;
 }
 
-.footer-logo,
+.footer-logo {
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
 .footer-address {
   color: var(--white-text);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -147,6 +211,10 @@ body {
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-mail:hover,
@@ -157,14 +225,20 @@ body {
 }
 
 /* ---------- PORTFOLIO PAGE ---------- */
-.portf-filter-button {
+.port-filter-btn {
   color: var(--secondary-text);
   background-color: #f5f4fa;
+  font-family: inherit;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.portf-filter-button:hover,
-.portf-filter-button:focus {
+.port-filter-btn:hover,
+.port-filter-btn:focus {
   color: var(--white-text);
   background-color: var(--accent);
 }
@@ -175,8 +249,15 @@ body {
 
 .portfolio-item-name {
   color: var(--secondary-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .portfolio-item-service {
   color: var(--main-text);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
